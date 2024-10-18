@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>contact</title>
+<style type="text/css">
+
+h1{color:brown;
+ font-family: new roman;
+}
+
+p{color: white;
+ font-family: new roman;
+font-size:200%;
+}
+ 
+
+<p style="font-color:red">
+
+<!--
+body{
+ 
+background-color:#cccccc;
+}-->
+
+
+
+
+body{
+background-image: url(Images/bgform.webp);
+height:100%;
+background-postion:center;
+background-repeat:no-repeat;
+background-size:cover;
+font-color:aqua;
+}
+
+input,label {
+height:100%;
+color: white;
+font-text:bold,strong;
+fond-size:60%;
+background-color:#0C090A;
+border: 1px solid #00796b; /* Teal border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+
+
+html,body {
+height:100%;
+color: white;
+font-text:bold,strong;
+fond-size:60%;
+background-color:#0C090A;
+}
+
+select {
+color: white;
+background-color:#0C090A;
+border: 1px solid #00796b; /* Teal border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+
+label {
+color: white;
+background-color:#0C090A;
+}
+
+
+
+#left {  float: left;  width: 30%; padding-left: 1%;  min-height: 0.em;  background-color: #E30022 #111111 #ee3e80 #0088dd; } 
+#center {  float: left;  width: 36%;  padding-left: 1%;  padding-right: 1%;  min-height: 0.em; } 
+#right {  float: left;  width: 30%;  padding-right: 1%;  min-height: 0.em;  background-color: #ee3e80#111111  #E30022  #0088dd; } 
+
+
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 28px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+.inline-space {
+    margin-right: 10px; /* Adjust the value as needed */
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0C090A;
+    padding: 20px;
+}
+
+.message-box {
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    color: white/* Text color */
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 5px;
+}
+
+
+
+.custom-textarea {
+    background-color: #0C090A; /* Light cyan background */
+    border: 1px solid #00796b; /* Teal border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Inner padding */
+    font-size: 16px; /* Font size */
+    color: white;    /* make text white*/
+    width: 41.%; /* Full width */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+
+        /* General page styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Overlay navigation container */
+        .overlay-nav {
+            height: 100%; /* Full height */
+            width: 0; /* Hidden by default */
+            position: fixed; /* Fixed to the viewport */
+            top: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.9); /* Dark overlay with transparency */
+            overflow-x: hidden; /* Disable horizontal scrolling */
+            transition: 0.5s; /* Smooth transition */
+        }
+
+        /* Navigation links inside the overlay */
+        .overlay-nav a {
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #fff;
+            display: block; /* Block-level links */
+            transition: 0.3s; /* Smooth color change */
+            text-align: center;
+        }
+
+        /* Hover effect for links */
+        .overlay-nav a:hover {
+            color: #f1f1f1;
+        }
+
+        /* Close button */
+        .overlay-nav .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            color: #fff;
+        }
+
+        /* Button to open the overlay */
+        .open-btn {
+            font-size: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #333;
+            color: white;
+            border: none;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        /* When the overlay is opened, set its width */
+        .overlay-nav.open {
+            width: 100%; /* Full-screen width overlay */
+        }
+
+
+.overlay-nav.open {
+    width: 30%; /* Slide in from the right covering 30% of the screen */
+}
+
+
+
+header .logo img {
+    width: 50px;
+    align: right;
+}
+
+
+
+      .logo  img{
+            border-radius:50%;
+            width: 60px;
+            height: 60px;
+           }
+
+
+
+header .logo img {
+    width: 50px;
+    vertical-align: right;
+}
+
+header .logo h1 {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: right;
+}
+
+.logo-container{
+position:absolute;
+right:0;
+top:10px;
+padding:10px;
+}
+
+
+/* Normal link style */
+.hover-link {
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Visited link style */
+.hover-link:visited {
+    color: purple;
+}
+
+/* Hover effect for visited link */
+.hover-link:visited:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+<br>
+<br>
+<br>
+<br>
+
+  <div class="logo">
+            <img src="Images/logo.jpg" alt="Logo" />  <span class="inline-space">   </span>
+            <h1></h1> <b><i> &copy;  CONTACT</b></></i>
+         </div>
+        </div>
+
+
+
+<br>
+<br>
+
+<form action="insert.php" method="post">
+ID:<input type="text" name="id" value = ""/><!--<br><br>-->
+Names:<input type="text" name="name" value = ""/><!--<br><br>-->
+
+<span class="inline-space"> </span>
+Surname:<input type="text" name="surname" value = "" /><br><br>
+email:<input type="text" name="surname" value = "" /><!--<br><br>-->
+
+<span class="inline-space"> <span class="inline-space">   </span>  </span> <span class="inline-space">   </span>  <span class="inline-space">   </span>
+Cell:<input type="numbers" name="surname" value = "" /><!--<br><br>-->
+
+  </span> <span class="inline-space">   </span>   <span class="inline-space">   </span>
+<label for="gener">Select Gender:</label> <span class="inline-space">   </span>
+<select id="gender" name="gender"> 
+<option
+ value = "male">male</option> <!--<br><br>-->
+<option
+ value = "female">female</option> <!--<br><br>-->
+</select>   <br><br>
+
+
+
+
+<label for="message">Message:</label>
+<textarea class="custom-textarea" rows="1" cols="60.4" placeholder="Type your message here..."></textarea><br><br>
+
+<input type="submit" value="Submit">           <input type="reset">
+
+
+
+<!--<div class="form-group">-->
+  <!--<label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="1" required></textarea>-->
+                </div> <!-- <button type="submit" class="submit-btn">Send Message</button>-->
+
+</form>
+
+
+
+
+<!-- Button to open the navigation -->
+    <button class="open-btn" onclick="openNav()">☰ Open Navigation</button>
+
+    <!-- Overlay navigation -->
+    <div id="myOverlay" class="overlay-nav">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="About%20us.html">About</a>
+        <a href="destinations.html">Destinations</a>
+    </div>
+
+    <script>
+        /* Function to open the navigation */
+        function openNav() {
+            document.getElementById("myOverlay").classList.add("open");
+        }
+
+        /* Function to close the navigation */
+        function closeNav() {
+            document.getElementById("myOverlay").classList.remove("open");
+        }
+    </script>
+
+
+
+
+
+</p>
+
+</body>
+</html>

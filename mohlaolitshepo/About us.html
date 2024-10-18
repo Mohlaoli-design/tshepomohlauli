@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About us</title>
+<link rel="stylesheet" href="About%20us.css">
+
+<style type="text/css">
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align:centre;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #0C090A;
+    color: white ;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo img {
+    width: 50px;
+    vertical-align: middle;
+}
+
+header .logo h1 {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.footer{ 
+display:block;
+}
+
+.container {
+    display: flex;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.sidebar {
+    width: 150px;
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #666;
+}
+
+.sidebar footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+.sidebar footer p {
+    margin: 5px 0;
+}
+
+.content {
+    flex: 1;
+  background-image: url(Images/01.jpg);
+height:431 px;
+width:648 px;
+background-postion:center;
+background-repeat:no-repeat;
+background-size:cover;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.full-image{
+height:100%;
+width:100%;
+object-fit:cover;
+}
+
+.content h1 {
+    margin-bottom: 20px;
+}
+
+
+.content header,footer {
+    font-size:120%;
+}
+
+.content body {
+    font-size:30%;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* Container for the marquee */
+.marquee-container {
+    width: 100%; /* Full width */
+    overflow: hidden; /* Hide any content that goes outside the container */
+    background-color: #333; /* Background color */
+    color: white; /* Text color */
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+/* Animation for the scrolling text */
+.marquee-text {
+    display: inline-block;
+    white-space: nowrap; /* Prevents text from wrapping */
+    animation: scroll 20s linear infinite; /* Defines the animation */
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%); /* Start the text from the right */
+    }
+    100% {
+        transform: translateX(-100%); /* Move it all the way to the left */
+    }
+}
+
+
+.image-crop {
+            width: 300px; /* Desired width */
+            height: 200px; /* Desired height */
+            overflow: hidden;  
+        }
+
+        .image-crop img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Crop image */
+        }
+
+        img{
+            border-radius:50%;
+            width: 60px;
+            height: 60px;
+           }
+
+
+
+       footer img{
+            border-radius:50%;
+            width: 60px;
+            height: 60px;
+           }
+
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+
+/* Normal link style */
+.hover-link {
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Visited link style */
+.hover-link:visited {
+    color: purple;
+}
+
+/* Hover effect for visited link */
+.hover-link:visited:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+
+
+/* Normal link style */
+.active-link {
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Active link style (while being clicked) */
+.active-link:active {
+    color: red;
+    transform: scale(0.95);  /* Creates a shrinking effect while clicked */
+}
+
+/* Hover effect for active link */
+.active-link:hover {
+    color: #666;
+    text-decoration: underline;
+}
+
+
+
+
+/* Style for unvisited links */
+.unvisited-link:link {
+    color: blue;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Hover effect for unvisited links */
+.unvisited-link:link:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+
+/* Base style for the link */
+.drag-hover-link {
+    color: blue;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid transparent;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover effect */
+.drag-hover-link:hover {
+    background-color: lightgray;
+    color: darkblue;
+    border-color: gray;
+}
+
+/* Active effect (while dragging or clicking) */
+.drag-hover-link:active {
+    background-color: aqua;
+    color: white;
+    border-color: darkorange;
+}
+
+/* Focus effect (when selected via keyboard or mouse click) */
+.drag-hover-link:focus {
+    outline: none;
+    box-shadow: 0 0 5px orange;
+}
+
+
+.footer-images {
+    display: grid; /* Uses grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
+    gap: 10px; /* Adds spacing between the images */
+    padding: 10px; /* Padding around the entire image area */
+}
+
+.footer-images img {
+    width: 6%; /* Ensures images take up the full width of their grid column */
+    height: auto; /* Keeps aspect ratio */
+    border-radius: 5px; /* Optional rounded corners */
+}
+
+
+.footer-images {
+    display: flex; /* Aligns images horizontally */
+    justify-content: space-around; /* Distributes images evenly with space between */
+    align-items: center; /* Vertically centers images (if they vary in height) */
+    padding: 10px; /* Adds some padding around the images */
+}
+g.footer-images img {
+    width: 10%; /* Adjust the percentage so three images fit side by side */
+    height: auto; /* Keeps the aspect ratio of the images */
+    max-width: 150px; /* Optional: Limit the maximum size of each image */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+    <header>
+
+
+
+
+        
+             <div class="logo">
+            <img src="Images/logo.jpg" alt="Logo" />  <span class="inline-space">   </span>
+            <h1>Travel World</h1>
+         </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <h2>About us</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destination</a></li>
+                <li><a href="contact%20page.html">Contact</a></li>
+
+
+            </ul>
+           
+        </div>
+        <section class="content">
+            <h2>Who are We...?</h2>
+            
+            <div class="marquee-container">
+    <div class="marquee-text">WE AS THE COMPANY DELIVER TOURING AND TRAVEL SERVICES.!!!</div>
+</div>
+            <h3>Our Vision, Mission and Aim</h3>
+            <p>To deliver the best travel experiences all over the world.</p>
+            <h3><i>Meet the Team</i></h3>
+            
+            <ul>
+                <li><strong>Mohlaoli T.P.</strong> - CEO</li>
+                <li><strong> Mohlaoli T.P.</strong> - Co-Founder & Web Developer</li>
+                <li><strong>Miss Mohlaoli M.M.</strong> - Travel Writer & Editor</li>
+                <li><strong>Cesa Xolile</strong> - Marketing Specialist</li>
+            </ul>
+         
+            
+             <footer class="creator-info">
+                <p>Created by Mohlaoli Phate T.</p>
+ 
+<p>&copy; travelworld@org.ls &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;   &copy; TRAVEL WORLD</p>
+
+<footer>
+    <div class="footer-images">
+        <img src="Images/fbk.jpg" alt="Travel World">Travel World
+        <img src="Images/1.jpg" alt="57006575/68728819"> 57006575/68728819
+        <img src="Images/call.jpg" alt="68728819/22657596">68728819/22657596
+      
+    </div>
+</footer>
+
+
+
+
+ </p>           
+
+
+        </section>
+    </div>
+</body>
+</html>
